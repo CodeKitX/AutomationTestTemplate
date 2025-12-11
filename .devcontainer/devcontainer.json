@@ -9,5 +9,5 @@
       ]
     }
   },
-  "postCreateCommand": "/bin/bash -lc 'curl -L https://services.gradle.org/distributions/gradle-8.10.2-bin.zip -o /tmp/gradle.zip && sudo mkdir -p /opt/gradle && sudo unzip -q /tmp/gradle.zip -d /opt/gradle && sudo ln -sf /opt/gradle/gradle-8.10.2/bin/gradle /usr/local/bin/gradle && gradle wrapper --gradle-version 8.10.2 || true'"
-}
+"postCreateCommand": "/bin/bash -lc 'curl -L https://services.gradle.org/distributions/gradle-8.10.2-bin.zip -o /tmp/gradle.zip && sudo mkdir -p /opt/gradle && sudo unzip -q /tmp/gradle.zip -d /opt/gradle && sudo ln -sf /opt/gradle/gradle-8.10.2/bin/gradle /usr/local/bin/gradle && gradle wrapper --gradle-version 8.10.2 && ./gradlew testClasses || true'"}
+
